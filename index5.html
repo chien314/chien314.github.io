@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>6.7 - Adding a jQuery UI slider</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <!-- D3 Tooltip CSS -->
+    <link rel="stylesheet" href="css/d3-tip.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+
+<body>
+   
+
+ <!--   <nav class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png"></a>      
+        </div>
+    </nav>
+-->
+ 
+    
+    <!-- Bootstrap grid setup -->
+<!--    1st row-->
+    <div class="container">
+<!--
+            <div class="container"> 
+
+         </div>   
+-->
+        
+<!--        2nd row-->
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Scene: 
+         <a class="dropdown-item" href="index.html"> 1 </a>
+         <a class="dropdown-item" href="index2.html"> 2 </a>
+         <a class="dropdown-item" href="index3.html"> 3 </a>
+         <a class="dropdown-item" href="index4.html"> 4 </a>
+                    5
+                </h4>
+            </div>
+                
+            <div class="col-md-4">
+<!--
+                <button id="play-button" class="btn btn-primary">Play</button>
+                <button id="reset-button" class="btn btn-primary">Reset</button>
+-->
+                <div id="slider-div">
+                    <label>Year: <span id="year">1800</span></label>
+                    <div id="date-slider"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <select id="continent-select" class="form-control">
+                    <option selected value="all">All regions</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas">Americas</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+
+                </select>
+            </div>
+<!--
+                        <div class="col-md-2">
+                <select id="continent-select" class="form-control">
+                    <option selected value="all">All regions</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas">Americas</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+
+                </select>
+            </div>
+-->
+        </div>
+        
+<!--        3rd row        -->
+        <div class="row">
+            <div class="col-md-4">
+                 <h3>Does higher income mean longer life span?</h3>
+                <p>We can look at this by </p>
+                <p> The figure on the right shows that this indeed the case for countries in all regions in the world. 
+                    One can look at all regions or select a region you like and vary the slider bar on the top.</p>
+
+
+            </div>                 
+            
+             <div class="col-md-8">
+<!--                 <p>ddddddd</p>-->
+                <div id="chart-area"></div>
+             </div> 
+                
+             </div>
+        
+        
+    </div>
+
+
+<!-- External JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
