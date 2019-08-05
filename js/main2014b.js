@@ -1,8 +1,3 @@
-/*
-*    main.js
-*    Mastering Data Visualization with D3.js
-*    6.7 - Adding a jQuery UI slider
-*/
 
 var margin = { left:80, right:20, top:50, bottom:100 };
 var height = 500 - margin.top - margin.bottom, 
@@ -76,13 +71,6 @@ var yLabel = g.append("text")
     .attr("font-size", "20px")
     .attr("text-anchor", "middle")
     .text("Life expectancy (years)")
-//var timeLabel = g.append("text")
-//    .attr("y", height -10)
-//    .attr("x", width - 40)
-//    .attr("font-size", "40px")
-//    .attr("opacity", "0.4")
-//    .attr("text-anchor", "middle")
-//    .text("1800");
 
 // X Axis
 var xAxisCall = d3.axisBottom(x)
@@ -139,29 +127,10 @@ d3.json("data/data2014.json").then(function(data){
         })
     });
 
-    // First run of the visualization
     update(formattedData[0]);
 
 })
 
-//$("#play-button")
-//    .on("click", function(){
-//        var button = $(this);
-//        if (button.text() == "Play"){
-//            button.text("Pause");
-//            interval = setInterval(step, 100);            
-//        }
-//        else {
-//            button.text("Play");
-//            clearInterval(interval);
-//        }
-//    })
-//
-//$("#reset-button")
-//    .on("click", function(){
-//        time = 0;
-//        update(formattedData[0]);
-//    })
 
 $("#continent-select")
     .on("change", function(){
@@ -179,45 +148,13 @@ $("#date-slider").slider({
 })
 
 function step(){
-    // At the end of our data, loop back
     time = (time < 214) ? time+1 : 0
     update(formattedData[time]);
 }
 
-//begin modify
-
-var continent = $("#continent-select").val();
-
-    var data = data.filter(function(d){
-        if (continent == "all") { return true; }
-        else {
-            return d.continent == continent;
-        }
-    })
-
-    // JOIN new data with old elements.
-    var circles = g.selectAll("circle").data(data, function(d){
-        return d.country;
-    });
-
-    // EXIT old elements not present in new data.
-//    circles.exit()
-//        .attr("class", "exit")
-//        .remove();
-
-        
-  circles.enter()
-        .append("circle")
-        .attr("class", "enter")
-        .attr("fill", function(d) { return continentColor(d.continent); })
-        .merge(circles)
-            .attr("cy", function(d){ return y(d.life_exp); })
-            .attr("cx", function(d){ return x(d.income) })
-            .attr("r", function(d){ return Math.sqrt(area(d.population))/2 });
 
 //begin update
 function update(data) {
-    // Standard transition time for the visualization
     var t = d3.transition()
         .duration(100);
 
@@ -230,17 +167,15 @@ function update(data) {
         }
     })
 
-    // JOIN new data with old elements.
     var circles = g.selectAll("circle").data(data, function(d){
         return d.country;
     });
 
-    // EXIT old elements not present in new data.
+
     circles.exit()
         .attr("class", "exit")
         .remove();
 
-    // ENTER new elements present in new data.
     circles.enter()
         .append("circle")
         .attr("class", "enter")
@@ -253,8 +188,6 @@ function update(data) {
             .attr("cx", function(d){ return x(d.income) })
             .attr("r", function(d){ return Math.sqrt(area(d.population))/2 });
 
-    // Update the time label
-  //  timeLabel.text(+(time + 1800))
     $("#year")[0].innerHTML = +(time + 1800)
 
     $("#date-slider").slider("value", +(time + 1800))
