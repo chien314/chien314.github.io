@@ -32,6 +32,22 @@ var tip = d3.tip().attr('class', 'd3-tip')
     });
 g.call(tip);
 
+//annotation
+g.append("text")
+    .attr("y", 115)
+    .attr("x", width / 3)
+    .attr("font-size", "17px")
+    .attr("text-anchor", "middle")
+    .attr("fill","red")
+    .text("Region: Europe");
+g.append("text")
+    .attr("y", 135)
+    .attr("x", width / 2.3)
+    .attr("font-size", "17px")
+    .attr("text-anchor", "middle")
+    .attr("fill","red")
+    .text("Average life expectancy: 80.67 years");
+
 // Scales
 var x = d3.scaleLog()
     .base(10)
@@ -168,6 +184,38 @@ function step(){
     update(formattedData[time]);
 }
 
+//begin modify
+
+var continent = $("#continent-select").val();
+
+    var data = data.filter(function(d){
+        if (continent == "all") { return true; }
+        else {
+            return d.continent == continent;
+        }
+    })
+
+    // JOIN new data with old elements.
+    var circles = g.selectAll("circle").data(data, function(d){
+        return d.country;
+    });
+
+    // EXIT old elements not present in new data.
+//    circles.exit()
+//        .attr("class", "exit")
+//        .remove();
+
+        
+  circles.enter()
+        .append("circle")
+        .attr("class", "enter")
+        .attr("fill", function(d) { return continentColor(d.continent); })
+        .merge(circles)
+            .attr("cy", function(d){ return y(d.life_exp); })
+            .attr("cx", function(d){ return x(d.income) })
+            .attr("r", function(d){ return Math.sqrt(area(d.population))/2 });
+
+//begin update
 function update(data) {
     // Standard transition time for the visualization
     var t = d3.transition()

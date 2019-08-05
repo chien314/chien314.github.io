@@ -37,19 +37,19 @@ g.call(tip);
 
 
 g.append("text")
-    .attr("y", 95)
-    .attr("x", width / 3)
-    .attr("font-size", "17px")
-    .attr("text-anchor", "left")
-    .attr("fill","red")
-    .text("Region: Europe");
-g.append("text")
     .attr("y", 115)
     .attr("x", width / 3)
     .attr("font-size", "17px")
-    .attr("text-anchor", "left")
+    .attr("text-anchor", "middle")
     .attr("fill","red")
-    .text("Average life expectancy: 33.30 years");
+    .text("Region: Africa");
+g.append("text")
+    .attr("y", 135)
+    .attr("x", width / 2.3)
+    .attr("font-size", "17px")
+    .attr("text-anchor", "middle")
+    .attr("fill","red")
+    .text("Average life expectancy: 26.40 years");
 
 
 // Scales

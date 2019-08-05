@@ -32,25 +32,21 @@ var tip = d3.tip().attr('class', 'd3-tip')
     });
 g.call(tip);
 
-
-//begin d3.annotation
-
-
+//begin annotation
 g.append("text")
-    .attr("y", 95)
+    .attr("y", 150)
     .attr("x", width / 3)
     .attr("font-size", "17px")
-    .attr("text-anchor", "left")
+    .attr("text-anchor", "middle")
     .attr("fill","red")
-    .text("Region: Europe");
+    .text("Region: Africa");
 g.append("text")
-    .attr("y", 115)
-    .attr("x", width / 3)
+    .attr("y", 170)
+    .attr("x", width / 2.3)
     .attr("font-size", "17px")
-    .attr("text-anchor", "left")
+    .attr("text-anchor", "middle")
     .attr("fill","red")
-    .text("Average life expectancy: 33.30 years");
-
+    .text("Average life expectancy: 59.30 years");
 
 // Scales
 var x = d3.scaleLog()
@@ -92,7 +88,6 @@ var yLabel = g.append("text")
 var xAxisCall = d3.axisBottom(x)
     .tickValues([500, 5000, 50000])
     .tickFormat(d3.format("$"));
-
 g.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height +")")
@@ -102,7 +97,6 @@ g.append("g")
 var yAxisCall = d3.axisLeft(y)
     .tickValues([20, 30, 40, 60, 80, 100])
     .tickFormat(function(d){ return +d; });
-
 g.append("g")
     .attr("class", "y axis")
     .call(yAxisCall);
@@ -130,7 +124,7 @@ continents.forEach(function(continent, i){
         .text(continent);
 });
 
-d3.json("data/data1800.json").then(function(data){
+d3.json("data/data2014.json").then(function(data){
     console.log(data);
 
     // Clean data
@@ -190,6 +184,38 @@ function step(){
     update(formattedData[time]);
 }
 
+//begin modify
+
+var continent = $("#continent-select").val();
+
+    var data = data.filter(function(d){
+        if (continent == "all") { return true; }
+        else {
+            return d.continent == continent;
+        }
+    })
+
+    // JOIN new data with old elements.
+    var circles = g.selectAll("circle").data(data, function(d){
+        return d.country;
+    });
+
+    // EXIT old elements not present in new data.
+//    circles.exit()
+//        .attr("class", "exit")
+//        .remove();
+
+        
+  circles.enter()
+        .append("circle")
+        .attr("class", "enter")
+        .attr("fill", function(d) { return continentColor(d.continent); })
+        .merge(circles)
+            .attr("cy", function(d){ return y(d.life_exp); })
+            .attr("cx", function(d){ return x(d.income) })
+            .attr("r", function(d){ return Math.sqrt(area(d.population))/2 });
+
+//begin update
 function update(data) {
     // Standard transition time for the visualization
     var t = d3.transition()
@@ -233,6 +259,3 @@ function update(data) {
 
     $("#date-slider").slider("value", +(time + 1800))
 }
-
-
-

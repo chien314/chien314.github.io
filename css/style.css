@@ -44,6 +44,24 @@
     margin-left: auto;
     display: block;
 }
+
+   body{
+        background-color: whitesmoke;
+     }
+
+     svg {
+        background-color: white;
+        font-family: 'Lato';
+     }
+
+    .annotation-note-title, text.title {
+      font-weight: bold;
+    }
+
+    text.title {
+      font-size: 1.2em;
+    }
+
 /*
 div {
   height: 100px;
