@@ -1,3 +1,17 @@
+svg {
+        background-color: white;
+        font-family: 'Lato';
+     }
+
+.annotation-note-title, text.title {
+      font-weight: bold;
+        font-size: 1.4em
+    }
+
+text {
+      font-size: 1.4em;
+    }
+
 #chart-area svg {
     width=50; 
     height=50;
