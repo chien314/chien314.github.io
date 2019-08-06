@@ -34,10 +34,9 @@ g.call(tip);
           note: {
                title: "Region: Europe",
             label: "Average life expectancy: 33.30 years",
-           
           },
           x: 230,
-          y: 200,
+          y: 220,
           dy: 100,
           dx: 70
         }].map(function(d){ d.color = "#E8336D"; return d})

@@ -37,7 +37,7 @@ g.call(tip);
            
           },
           x: 180,
-          y: 230,
+          y: 245,
           dy: 70,
           dx: 90
         }].map(function(d){ d.color = "#E8336D"; return d})
