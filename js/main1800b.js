@@ -29,22 +29,42 @@ g.call(tip);
 
 
 //begin d3.annotation
+      const annotations = [
+        {
+          note: {
+               title: "Region: Africa",
+            label: "Average life expectancy: 26.40 years",
+           
+          },
+          x: 180,
+          y: 230,
+          dy: 70,
+          dx: 90
+        }].map(function(d){ d.color = "#E8336D"; return d})
 
+        const makeAnnotations = d3.annotation()
+          .type(d3.annotationLabel)
+          .annotations(annotations)
 
-g.append("text")
-    .attr("y", 115)
-    .attr("x", width / 3)
-    .attr("font-size", "17px")
-    .attr("text-anchor", "middle")
-    .attr("fill","red")
-    .text("Region: Africa");
-g.append("text")
-    .attr("y", 135)
-    .attr("x", width / 2.3)
-    .attr("font-size", "17px")
-    .attr("text-anchor", "middle")
-    .attr("fill","red")
-    .text("Average life expectancy: 26.40 years");
+        d3.select("svg")
+          .append("g")
+          .attr("class", "annotation-group")
+          .call(makeAnnotations)
+
+//g.append("text")
+//    .attr("y", 115)
+//    .attr("x", width / 3)
+//    .attr("font-size", "17px")
+//    .attr("text-anchor", "middle")
+//    .attr("fill","red")
+//    .text("Region: Africa");
+//g.append("text")
+//    .attr("y", 135)
+//    .attr("x", width / 2.3)
+//    .attr("font-size", "17px")
+//    .attr("text-anchor", "middle")
+//    .attr("fill","red")
+//    .text("Average life expectancy: 26.40 years");
 
 
 // Scales
@@ -160,7 +180,7 @@ function step(){
 
 function update(data) {
     var t = d3.transition()
-        .duration(100);
+        .duration(0);
 
     var continent = $("#continent-select").val();
 
