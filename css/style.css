@@ -1,11 +1,6 @@
 #chart-area svg {
     width=50; 
     height=50;
-/*
-	margin-left: 50%;
-    margin-right: auto;
-    display: block;
-*/
 }
 
 #logo {
@@ -45,22 +40,6 @@
     display: block;
 }
 
-   body{
-        background-color: whitesmoke;
-     }
-
-     svg {
-        background-color: white;
-        font-family: 'Lato';
-     }
-
-    .annotation-note-title, text.title {
-      font-weight: bold;
-    }
-
-    text.title {
-      font-size: 1.2em;
-    }
 
 /*
 div {
