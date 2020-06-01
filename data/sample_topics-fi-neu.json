@@ -1,0 +1,205 @@
+{
+ "name": "top",
+ "children": [
+  {
+   "name": "Topic0",
+   "children": [
+    {"name":"buffet","size":0.00446938722065},
+    {"name":"place","size":0.00426497145392},
+    {"name":"cheese","size":0.00402147288511},
+    {"name":"like","size":0.00387652407514},
+    {"name":"beers","size":0.00369572031313},
+    {"name":"just","size":0.00362458797889},
+    {"name":"really","size":0.00355354592697},
+    {"name":"great","size":0.0034393246671},
+    {"name":"bar","size":0.00314507356829},
+    {"name":"fries","size":0.00307432001845},
+    {"name":"service","size":0.00305679866009},
+    {"name":"pretty","size":0.00305341905554},
+    {"name":"beer","size":0.00297995264402},
+    {"name":"burger","size":0.00290587068529},
+    {"name":"chicken","size":0.0027996158453}
+   ]
+  },
+  {
+   "name": "Topic1",
+   "children": [
+    {"name":"pub","size":0.0216594743485},
+    {"name":"pint","size":0.00599557252078},
+    {"name":"buffet","size":0.00398685465101},
+    {"name":"pasty","size":0.00390521543771},
+    {"name":"station","size":0.00373333566704},
+    {"name":"tap","size":0.00372902463961},
+    {"name":"pretzels","size":0.00339705607291},
+    {"name":"place","size":0.0030683166364},
+    {"name":"ok","size":0.00291502552403},
+    {"name":"champagne","size":0.00278142753828},
+    {"name":"great","size":0.00276270950932},
+    {"name":"grub","size":0.00264628112575},
+    {"name":"service","size":0.0024778841141},
+    {"name":"locals","size":0.00243798104314},
+    {"name":"just","size":0.00243446039969}
+   ]
+  },
+  {
+   "name": "Topic2",
+   "children": [
+    {"name":"irish","size":0.0420188635488},
+    {"name":"monta","size":0.0123392037089},
+    {"name":"pub","size":0.00512839789163},
+    {"name":"crabs","size":0.00469141863547},
+    {"name":"pints","size":0.00425637676562},
+    {"name":"closed","size":0.00415479858555},
+    {"name":"essen","size":0.00382887873197},
+    {"name":"carved","size":0.00303863791002},
+    {"name":"palace","size":0.00295698622281},
+    {"name":"downtown","size":0.0027527467178},
+    {"name":"rosie","size":0.00272065988956},
+    {"name":"grain","size":0.00262771015842},
+    {"name":"diverse","size":0.0024578217482},
+    {"name":"drafts","size":0.00218401022447},
+    {"name":"glendale","size":0.00214632472794}
+   ]
+  },
+  {
+   "name": "Topic3",
+   "children": [
+    {"name":"brisket","size":0.00504613099784},
+    {"name":"games","size":0.00352922631033},
+    {"name":"pizza","size":0.00293875279422},
+    {"name":"spread","size":0.00246935966732},
+    {"name":"ain","size":0.00241520770744},
+    {"name":"varieties","size":0.00240615461123},
+    {"name":"station","size":0.00237902887078},
+    {"name":"rewards","size":0.00235379571252},
+    {"name":"buffet","size":0.00228529849524},
+    {"name":"sports","size":0.00227892726597},
+    {"name":"stations","size":0.00226584702464},
+    {"name":"nfl","size":0.00221107314609},
+    {"name":"nacho","size":0.0020860884079},
+    {"name":"tart","size":0.00203679392842},
+    {"name":"cajun","size":0.00195532407637}
+   ]
+  },
+  {
+   "name": "Topic4",
+   "children": [
+    {"name":"tonkatsu","size":0.00595298337497},
+    {"name":"ramen","size":0.00582561368453},
+    {"name":"republic","size":0.00414853760087},
+    {"name":"hall","size":0.00409619442067},
+    {"name":"players","size":0.00407834550393},
+    {"name":"golden","size":0.0039350628848},
+    {"name":"buffett","size":0.00342703874575},
+    {"name":"rowdy","size":0.00304902773931},
+    {"name":"bottomless","size":0.00260951973688},
+    {"name":"upstairs","size":0.00254174779111},
+    {"name":"downstairs","size":0.00243490558103},
+    {"name":"service","size":0.00242037897798},
+    {"name":"views","size":0.00226773762322},
+    {"name":"truffle","size":0.0021973961096},
+    {"name":"tourists","size":0.00218919150625}
+   ]
+  },
+  {
+   "name": "Topic5",
+   "children": [
+    {"name":"omelet","size":0.00558009341663},
+    {"name":"tots","size":0.0044454728196},
+    {"name":"tater","size":0.00295234578311},
+    {"name":"cupcakes","size":0.00281942610455},
+    {"name":"ac","size":0.00277928137162},
+    {"name":"wearing","size":0.00266693885087},
+    {"name":"fee","size":0.00266253117845},
+    {"name":"forest","size":0.00238737502205},
+    {"name":"3rd","size":0.00236414499264},
+    {"name":"domestic","size":0.00229938866618},
+    {"name":"st","size":0.00222378813895},
+    {"name":"pong","size":0.00220359926885},
+    {"name":"restrooms","size":0.00217474322762},
+    {"name":"gaming","size":0.00213910211059},
+    {"name":"weekdays","size":0.00204390749032}
+   ]
+  },
+  {
+   "name": "Topic6",
+   "children": [
+    {"name":"place","size":0.00634191360247},
+    {"name":"beer","size":0.00629920446393},
+    {"name":"buffet","size":0.00627745313769},
+    {"name":"just","size":0.00506481210971},
+    {"name":"bar","size":0.00495144369612},
+    {"name":"like","size":0.00491558052232},
+    {"name":"great","size":0.00490013628426},
+    {"name":"really","size":0.00437166659544},
+    {"name":"service","size":0.00414515753644},
+    {"name":"pretty","size":0.0040678935962},
+    {"name":"time","size":0.00378612277649},
+    {"name":"selection","size":0.00351884275379},
+    {"name":"nice","size":0.00332252855549},
+    {"name":"don","size":0.00317344760028},
+    {"name":"little","size":0.00294850614623}
+   ]
+  },
+  {
+   "name": "Topic7",
+   "children": [
+    {"name":"buffet","size":0.00454526685084},
+    {"name":"strawberries","size":0.0041229858024},
+    {"name":"legs","size":0.00341228406074},
+    {"name":"sausages","size":0.00321089641348},
+    {"name":"aria","size":0.00282205461248},
+    {"name":"wynn","size":0.00270999266841},
+    {"name":"place","size":0.00259452069617},
+    {"name":"craft","size":0.00252493894866},
+    {"name":"crab","size":0.00248415554357},
+    {"name":"great","size":0.00247246599164},
+    {"name":"like","size":0.00246521216387},
+    {"name":"service","size":0.00225747399105},
+    {"name":"chicken","size":0.00224240959767},
+    {"name":"really","size":0.00212026701829},
+    {"name":"just","size":0.00207275247327}
+   ]
+  },
+  {
+   "name": "Topic8",
+   "children": [
+    {"name":"ramen","size":0.0122165001124},
+    {"name":"sports","size":0.00987370079238},
+    {"name":"tonkotsu","size":0.00771847364262},
+    {"name":"crepe","size":0.00531768714506},
+    {"name":"wicked","size":0.0044724743774},
+    {"name":"dane","size":0.00443503123545},
+    {"name":"shoyu","size":0.00404919792488},
+    {"name":"arcadia","size":0.00374463927281},
+    {"name":"groupon","size":0.00353222046708},
+    {"name":"wooden","size":0.00346280035767},
+    {"name":"boba","size":0.00271309020772},
+    {"name":"spoon","size":0.00233230496508},
+    {"name":"dave","size":0.00211821307096},
+    {"name":"attempt","size":0.00210631698598},
+    {"name":"player","size":0.00206553349527}
+   ]
+  },
+  {
+   "name": "Topic9",
+   "children": [
+    {"name":"ramen","size":0.00911683780918},
+    {"name":"german","size":0.00797478994239},
+    {"name":"burger","size":0.00518542116522},
+    {"name":"place","size":0.0039486832531},
+    {"name":"station","size":0.00389254016773},
+    {"name":"like","size":0.00348739538269},
+    {"name":"just","size":0.00339061475194},
+    {"name":"beers","size":0.00338953010249},
+    {"name":"broth","size":0.00336778675346},
+    {"name":"beer","size":0.00315204515403},
+    {"name":"pretzel","size":0.00309664781667},
+    {"name":"buffet","size":0.00302546448061},
+    {"name":"time","size":0.00300620631169},
+    {"name":"nachos","size":0.00298231836615},
+    {"name":"great","size":0.002939078629}
+   ]
+  }
+ ]
+}

@@ -1,0 +1,205 @@
+{
+ "name": "top",
+ "children": [
+  {
+   "name": "Topic0",
+   "children": [
+    {"name":"boba","size":0.00735164639296},
+    {"name":"crown","size":0.00343772850894},
+    {"name":"wing","size":0.00341721711563},
+    {"name":"texas","size":0.0033053897322},
+    {"name":"steam","size":0.00322910901452},
+    {"name":"disapointed","size":0.00305677136031},
+    {"name":"miller","size":0.00270265330281},
+    {"name":"significantly","size":0.00254660360575},
+    {"name":"37","size":0.00253489025063},
+    {"name":"ceasar","size":0.00252491956273},
+    {"name":"land","size":0.00229707706866},
+    {"name":"cigarettes","size":0.00228780873351},
+    {"name":"bananas","size":0.00228373326704},
+    {"name":"hockey","size":0.00226076031807},
+    {"name":"bouncers","size":0.00223073032063}
+   ]
+  },
+  {
+   "name": "Topic1",
+   "children": [
+    {"name":"place","size":0.00558180276116},
+    {"name":"good","size":0.00481261493794},
+    {"name":"beer","size":0.004665393347},
+    {"name":"just","size":0.00446938360144},
+    {"name":"service","size":0.00434155439954},
+    {"name":"bar","size":0.00409895654381},
+    {"name":"like","size":0.00398557363042},
+    {"name":"time","size":0.00389152952242},
+    {"name":"german","size":0.0036564635251},
+    {"name":"minutes","size":0.00359535170379},
+    {"name":"waitress","size":0.00339099698261},
+    {"name":"came","size":0.00337904022656},
+    {"name":"table","size":0.00335613041965},
+    {"name":"order","size":0.00332522474831},
+    {"name":"ordered","size":0.00312591269953}
+   ]
+  },
+  {
+   "name": "Topic2",
+   "children": [
+    {"name":"good","size":0.0069365993728},
+    {"name":"place","size":0.00535061766239},
+    {"name":"ramen","size":0.00525091178615},
+    {"name":"beer","size":0.00509285144266},
+    {"name":"like","size":0.0050157856777},
+    {"name":"just","size":0.00448377264926},
+    {"name":"buffet","size":0.00431802699653},
+    {"name":"service","size":0.00404032996769},
+    {"name":"great","size":0.00372035984841},
+    {"name":"really","size":0.00365175893132},
+    {"name":"better","size":0.00348552180272},
+    {"name":"selection","size":0.00300543263226},
+    {"name":"bar","size":0.00295017587715},
+    {"name":"pretty","size":0.00274921838151},
+    {"name":"ok","size":0.00257548391924}
+   ]
+  },
+  {
+   "name": "Topic3",
+   "children": [
+    {"name":"closed","size":0.00684697268758},
+    {"name":"pt","size":0.00504150327205},
+    {"name":"benedict","size":0.0049399189408},
+    {"name":"instant","size":0.00464778951932},
+    {"name":"ale","size":0.00418914579864},
+    {"name":"crepe","size":0.00385571118084},
+    {"name":"thanksgiving","size":0.00371324992843},
+    {"name":"dave","size":0.00333301530192},
+    {"name":"tan","size":0.00324722928963},
+    {"name":"essen","size":0.00306565343388},
+    {"name":"poisoned","size":0.00296278720684},
+    {"name":"southern","size":0.00247101959607},
+    {"name":"bummer","size":0.00244573572463},
+    {"name":"tavern","size":0.00217658298016},
+    {"name":"bones","size":0.0021506403926}
+   ]
+  },
+  {
+   "name": "Topic4",
+   "children": [
+    {"name":"students","size":0.00501673448965},
+    {"name":"bud","size":0.0042128986676},
+    {"name":"hibachi","size":0.00359040923621},
+    {"name":"asu","size":0.00317638727614},
+    {"name":"contacted","size":0.00268907255027},
+    {"name":"plays","size":0.00263473316668},
+    {"name":"stopping","size":0.00260222755485},
+    {"name":"chicks","size":0.00256826522562},
+    {"name":"sirloin","size":0.00252764724558},
+    {"name":"scenery","size":0.00236262820154},
+    {"name":"dates","size":0.00231766247295},
+    {"name":"message","size":0.0022703131284},
+    {"name":"weekly","size":0.0020975746267},
+    {"name":"todai","size":0.00209707605956},
+    {"name":"ideal","size":0.00209256477368}
+   ]
+  },
+  {
+   "name": "Topic5",
+   "children": [
+    {"name":"mimosas","size":0.0043078116604},
+    {"name":"trap","size":0.00412773579282},
+    {"name":"unfriendly","size":0.00392900401365},
+    {"name":"unlimited","size":0.00390373940336},
+    {"name":"chops","size":0.00263536800556},
+    {"name":"postinos","size":0.00259465560337},
+    {"name":"diarrhea","size":0.00255151437099},
+    {"name":"services","size":0.00254249822982},
+    {"name":"bucket","size":0.00224105909346},
+    {"name":"lamb","size":0.00209933883189},
+    {"name":"neglected","size":0.00203123348645},
+    {"name":"3pm","size":0.0020181736259},
+    {"name":"debit","size":0.0019506730854},
+    {"name":"deals","size":0.00192852572413},
+    {"name":"overlooked","size":0.00189637766609}
+   ]
+  },
+  {
+   "name": "Topic6",
+   "children": [
+    {"name":"buffet","size":0.00628447421168},
+    {"name":"place","size":0.00501244232126},
+    {"name":"service","size":0.00446660366594},
+    {"name":"pizza","size":0.00413186300237},
+    {"name":"brats","size":0.00401341878819},
+    {"name":"good","size":0.0039285887587},
+    {"name":"bad","size":0.00380754781467},
+    {"name":"time","size":0.00372098317603},
+    {"name":"just","size":0.00338917744067},
+    {"name":"like","size":0.00330993413292},
+    {"name":"really","size":0.00319321053449},
+    {"name":"don","size":0.00317493031775},
+    {"name":"vegas","size":0.00298237789309},
+    {"name":"horrible","size":0.00284880253223},
+    {"name":"great","size":0.00282792469981}
+   ]
+  },
+  {
+   "name": "Topic7",
+   "children": [
+    {"name":"pretzel","size":0.0163400442242},
+    {"name":"gelato","size":0.00472072840508},
+    {"name":"pretzels","size":0.00392300890399},
+    {"name":"microwaved","size":0.00386012366203},
+    {"name":"female","size":0.00372903799378},
+    {"name":"kilt","size":0.00351978170476},
+    {"name":"regulars","size":0.00348305723343},
+    {"name":"hooters","size":0.00340597137287},
+    {"name":"tilted","size":0.00316335447068},
+    {"name":"candy","size":0.00310947093492},
+    {"name":"frat","size":0.00246824746618},
+    {"name":"cheeseburger","size":0.0023073208009},
+    {"name":"bratwurst","size":0.00226873326378},
+    {"name":"chowder","size":0.00225090550113},
+    {"name":"dancing","size":0.00216802313512}
+   ]
+  },
+  {
+   "name": "Topic8",
+   "children": [
+    {"name":"pub","size":0.00838275321712},
+    {"name":"buffet","size":0.00640075355532},
+    {"name":"breakfast","size":0.00605682902754},
+    {"name":"place","size":0.00438902240207},
+    {"name":"good","size":0.00383099624156},
+    {"name":"buffets","size":0.00356509984732},
+    {"name":"like","size":0.00337292012485},
+    {"name":"just","size":0.00309319189819},
+    {"name":"service","size":0.00302655141192},
+    {"name":"beers","size":0.00289605053218},
+    {"name":"time","size":0.00275684877581},
+    {"name":"don","size":0.00257397546614},
+    {"name":"bad","size":0.00247576542306},
+    {"name":"better","size":0.00247008868562},
+    {"name":"really","size":0.00246669553886}
+   ]
+  },
+  {
+   "name": "Topic9",
+   "children": [
+    {"name":"buffet","size":0.00493622133479},
+    {"name":"sandwiches","size":0.00419138806064},
+    {"name":"tonkatsu","size":0.0034793917926},
+    {"name":"sauerkraut","size":0.00335775071504},
+    {"name":"men","size":0.00302975291591},
+    {"name":"public","size":0.00279914309108},
+    {"name":"smoke","size":0.00276071227246},
+    {"name":"draft","size":0.00272409965347},
+    {"name":"ranch","size":0.00264850051006},
+    {"name":"brisket","size":0.00227744802955},
+    {"name":"coleslaw","size":0.00226228709013},
+    {"name":"tenders","size":0.00226012526359},
+    {"name":"place","size":0.00218639699839},
+    {"name":"pizza","size":0.00216534209257},
+    {"name":"players","size":0.00216389648185}
+   ]
+  }
+ ]
+}
