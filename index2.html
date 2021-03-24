@@ -1,116 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <title>9.5 - Circle packing</title>
-    <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Custom CSS -->
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <!-- D3 Tooltip CSS -->
+    <link rel="stylesheet" href="css/d3-tip.css">
+    <!-- Custom styling -->
     <link rel="stylesheet" href="css/style.css">
+ 
 </head>
-<body>
 
-    <nav class="navbar navbar-default"></nav>
-    <svg width="960" height="650"><g transform="translate(1,1)"></g></svg>
+<body>
+   
+ 
     
-    <!--        2nd row-->
+    <!-- Bootstrap grid setup -->
+<!--    1st row-->
+    <div class="container">
+<!--
+            <div class="container"> 
+
+         </div>   
+-->
+        
+<!--        2nd row-->
         <div class="row">
             <div class="col-md-4">
-                <h4 style="color:mediumvioletred">Fig: 
-         <a class="dropdown-item" href="index.html"> 1(a) </a>
-                                                     1(b)
-         <a class="dropdown-item" href="index3.html"> 2 </a>
-         <a class="dropdown-item" href="index4.html"> 4(a) </a>
-         <a class="dropdown-item" href="index5.html"> 4(b) </a>
-         <a class="dropdown-item" href="index6.html"> 4(c) </a>
-         <a class="dropdown-item" href="index7.html"> 5(a) </a>
-         <a class="dropdown-item" href="index8.html"> 5(b) </a>
-         <a class="dropdown-item" href="index9.html"> 5(c) </a>
+                <h4 style="color:mediumvioletred">Scene: 
+        <a class="dropdown-item" href="index.html"> 1 </a>
+                    2
+         <a class="dropdown-item" href="index3.html"> 3 </a>
+         <a class="dropdown-item" href="index4.html"> 4 </a>
+         <a class="dropdown-item" href="index5.html"> 5 </a>
                 </h4>
             </div>
                 
             <div class="col-md-4">
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
+            <div>
+                 <h3>Year: 2014</h3>
+            </div>           
+            </div>
+            <div class="col-md-4">
+                <select id="continent-select" class="form-control">
+                    <option selected value="europe">Europe</option>
+                    <option value="all">All regions</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas">Americas</option>
+                    <option value="asia">Asia</option>
 
-<script>
+                </select>
+            </div>
 
-    var svg = d3.select("svg"),
-        width = +svg.attr("width"),
-        height = +svg.attr("height");
+        </div>
+        
+<!--        3rd row        -->
+        <div class="row">
+            <div class="col-md-4">
+                
+                 <h3>Does higher income mean longer life span?</h3>
+                <h4>
+                <p>In 2014, both GDP per capita and the life expectancy increase in Europe
+                    as shown in the plot on the right and it continues to have the highest average GDP per capita 
+                and longest average life expectancy (~81 years).</p>
+                </h4>    
+                <h3> Is this only true for the developed countries?</h3>
+                
+                <br>
+                <h5 style="color:green">
+                Tips:
+                </h5>                
+                <h5 style="color:green">
+                Change the scene number on the top-left corner.
+                </h5>
+                <h5 style="color:green">
+                Select the region you want to look at on the top-right corner.
+                </h5>                
+                <h5 style="color:green">
+                Mouseover the circles in the plot to see
+                the details about each country.
+                </h5>
 
-    var format = d3.format(",d");
+            </div>                 
+            
+             <div class="col-md-8">
+<!--                 <p>ddddddd</p>-->
+                <div id="chart-area"></div>
+             </div> 
+                
+             </div>
+        
+        
+    </div>
 
-    // Different way for us to get a color scale
-    var color = d3.scaleSequential(d3.interpolateMagma)
-        .domain([-4, 4]);
 
-    // Stratify converts the data into the correct format
-    var stratify = d3.stratify()
-        .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
-
-    // Similar to how d3.treemap looks
-    var pack = d3.pack()
-        .size([width - 2, height - 2])
-        .padding(3);
-
-    d3.csv("data/sample_topics-sat-pl.txt", function(error, data) {
-        if (error) throw error;
-
-        // Create the root node with d3.stratify()
-        var root = stratify(data)
-            .sum(function(d) { return d.value; })
-            .sort(function(a, b) { return b.value - a.value; });
-
-        // Adds an x, y, and r value to each node
-        pack(root);
-
-        // Add a group for all the descendents of the root node
-        var node = svg.select("g")
-            .selectAll("g")
-            .data(root.descendants())
-            .enter().append("g")
-                .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-                .attr("class", function(d) { return "node" + (!d.children ? " node--leaf" : d.depth ? "" : " node--root"); })
-                .each(function(d) { d.node = this; })
-                .on("mouseover", hovered(true))
-                .on("mouseout", hovered(false));
-
-        // Append a circle to each node. Color-coded by level of the hierarchy 
-        node.append("circle")
-            .attr("id", function(d) { return "node-" + d.id; })
-            .attr("r", function(d) { return d.r; })
-            .style("fill", function(d) { return color(d.depth); });
-
-        // Add labels for only the leaf nodes
-        var leaf = node.filter(function(d) { return !d.children; });
-
-        leaf.append("clipPath")
-            .attr("id", function(d) { return "clip-" + d.id; })
-            .append("use")
-                .attr("xlink:href", function(d) { return "#node-" + d.id + ""; });
-
-        leaf.append("text")
-            .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; })
-            .selectAll("tspan")
-            .data(function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1).split(/(?=[A-Z][^A-Z])/g); })
-            .enter().append("tspan")
-                .attr("x", 0)
-                .attr("y", function(d, i, nodes) { return 13 + (i - nodes.length / 2 - 0.5) * 10; })
-                .text(function(d) { return d; });
-
-        // Simple tooltip
-        node.append("title")
-            .text(function(d) { return d.id + "\n" + format(d.value); });
-    });
-
-    // When we hover over a node, highlight all of the node's ancestors
-    function hovered(hover) {
-        return function(d) {
-            d3.selectAll(d.ancestors().map(function(d) { return d.node; })).classed("node--hover", hover);
-        };
-    }
-
-</script>
+<!-- External JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<!-- Custom JS -->
+<script src="js/main2014.js"></script>
 
 </body>
+</html>
+
+
+
+
+
+
+
+
+
