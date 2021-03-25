@@ -17,4 +17,4 @@ Table showing the change of parameters triggered by the transition of scenes.
 
 There are affordances I provided to the user. First, I create a drop-down menu on the top-right corner for the region parameter. It contains up and down arrows, which is a strong hint that one can use it to select different regions. For the scene numbers, I highlight it with a color different from that used in the main text so that the viewers can see that easily. In the last scene I also have a slider bar, which clearly suggest the viewers to move the bar and see how the result would change as they move the bar. Second, I also mention all these options explicitly on the webpage and highlight it to make sure that the users know about what options are available to them. 
 
-![image](https://user-images.githubusercontent.com/44957569/112418385-56712b00-8cf7-11eb-84d7-6d13e66bdfed.png)
+
