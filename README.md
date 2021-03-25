@@ -16,7 +16,7 @@ Furthermore, I placed annotations right next to the important data points of the
 |2	|2014	|Europe (default)|
 |3	|1800	|Africa (default)|
 |4	|2014	|Africa (default)|
-5	1800-2014 (free form)	Free form 
+|5	|1800-2014 (free form)|	Free form |
 
 Table showing the change of parameters triggered by the transition of scenes.
 
