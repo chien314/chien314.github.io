@@ -10,8 +10,8 @@ In Scene 1, I raised a question “Does higher income mean longer life span?” 
 
 Furthermore, I placed annotations right next to the important data points of the plot. I use the same format through out the scenes. The annotations highlight important information such as life expectancy of the year etc. and significantly support the messaging. The parameters I used are scene numbers, regions, and years. When I change the scene number, the web page switch to different states. Every time I change scene numbers, it would trigger the change of parameters and bring me to a different state with different years and regions. I summarize the changes in the table below.
 
-|Scene| number|	Year|	Region|
-|-----|-------|-----|-------|
+|Scene|	Year|	Region|
+|-----|-----|-------|
 |1	|1800	|Europe (default)|
 |2	|2014	|Europe (default)|
 |3	|1800	|Africa (default)|
